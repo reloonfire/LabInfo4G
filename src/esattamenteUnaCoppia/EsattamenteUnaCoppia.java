@@ -18,6 +18,12 @@ public class EsattamenteUnaCoppia {
 			vett[i] = ThreadLocalRandom.current().nextInt(min, max);
 		}
 	}
+	
+	public static void stampaVettore() {
+		for (int i = 0; i > vett.length; i++) {
+			System.out.println(" " + vett[i]);
+		}
+	}
 	public static void coppie() {
 		int numCoppie = 0;
 		int scelta;
@@ -48,6 +54,7 @@ public class EsattamenteUnaCoppia {
 		vett = new int[dimensioneVett];
 		
 		randomVett(0, 10);
+		stampaVettore();
 		coppie();
 		sc.close();
 	}
