@@ -20,8 +20,8 @@ public class EsattamenteUnaCoppia {
 	}
 	
 	public static void stampaVettore() {
-		for (int i = 0; i > vett.length; i++) {
-			System.out.print(" " + vett[i]);
+		for (int i = 0; i < vett.length; i++) {
+			System.out.print(vett[i] + " ");
 		}
 	}
 	public static void coppie() {
