@@ -2,7 +2,6 @@ package esattamenteUnaCoppia;
 
 //Esercizio 25 Settembre
 
-// Prova Git
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
