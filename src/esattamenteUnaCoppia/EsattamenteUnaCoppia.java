@@ -21,7 +21,7 @@ public class EsattamenteUnaCoppia {
 	
 	public static void stampaVettore() {
 		for (int i = 0; i > vett.length; i++) {
-			System.out.println(" " + vett[i]);
+			System.out.print(" " + vett[i]);
 		}
 	}
 	public static void coppie() {
