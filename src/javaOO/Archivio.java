@@ -3,7 +3,11 @@ package javaOO;
 public class Archivio {
 
 	private int indice = 0;	
-	private Persona[] listaPersone = new Persona[10];
+	private Persona[] listaPersone;
+	
+	public Archivio(int indice) {
+		this.listaPersone = new Persona[indice];
+	}
 	
 	public boolean aggiungiPersona(Persona p) {
 		if(indice < listaPersone.length) {
@@ -12,6 +16,7 @@ public class Archivio {
 		}
 		return false;
 	}
+	
 	/**
 	 * Cerca una persona nell'archivio tramite il cognome.
 	 * @param cognome
