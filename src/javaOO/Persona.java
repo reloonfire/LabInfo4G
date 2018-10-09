@@ -12,4 +12,10 @@ public class Persona {
 		this.cognome = cognome;
 	}
 	
+	@Override
+	public String toString() {
+		return "Persona [Nome=" + nome + ", Cognome=" + cognome + ", Età=" + eta + ", Sesso=" + sesso + "]";
+	}
+	
+	
 }

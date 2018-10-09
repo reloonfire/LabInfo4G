@@ -21,6 +21,7 @@ public class Archive {
 		for (int i = 0; i < listaPersone.length; i++) {
 			if (cognome.equals(listaPersone[i].cognome)) {
 				listaPersone[i] = null;
+				return true;
 			}
 		}
 		return false;
