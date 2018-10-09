@@ -1,7 +1,5 @@
 package javaOO;
 
-import javax.swing.JSpinner.ListEditor;
-
 public class Archive {
 
 	private int indice = 0;
