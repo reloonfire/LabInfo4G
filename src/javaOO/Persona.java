@@ -7,4 +7,9 @@ public class Persona {
 	int eta;
 	char sesso;
 	
+	public Persona(String nome, String cognome) {
+		this.nome = nome;
+		this.cognome = cognome;
+	}
+	
 }
