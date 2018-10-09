@@ -6,7 +6,7 @@ public class Persona {
 	String cognome;
 	int eta;
 	char sesso;
-	
+	//Costruttore
 	public Persona(String nome, String cognome) {
 		this.nome = nome;
 		this.cognome = cognome;
