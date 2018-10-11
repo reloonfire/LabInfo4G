@@ -2,17 +2,17 @@ package javaOO;
 
 public class Archive {
 
-	private int indice = 0;
 	private Persona[] listaPersone;
 
 	public Archive(int dim) {
-		this.listaPersone = new Persona[dim];
+		listaPersone = new Persona[dim];
 	}
 
 	public boolean addPerson(Persona p) {
-		if (indice < listaPersone.length) {
-			listaPersone[indice++] = p;
-			return true;
+		for (int i = 0; i < listaPersone.length; i++) {
+			if(listaPersone[i] == null) {
+				listaPersone[i] = p;
+			}
 		}
 		return false;
 	}

@@ -7,5 +7,6 @@ public class Principale {
 		Scanner sc = new Scanner(System.in);
 		Persona p;
 		Archive a = new Archive(10);
+		
 	}
 }
