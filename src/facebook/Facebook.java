@@ -32,11 +32,13 @@ public class Facebook {
 		newName = sc.next();
 		System.out.println("Inserisci il cognome.");
 		newSurname = sc.next();
-		galleria.searchPhotoByTag(tag).tagAmico(amici.searchAmico(newName + " " + newSurname));
+		newName = newName + " " + newSurname;
+		System.out.println("Inserisci il tag.");
+		tag = sc.next();
+		galleria.searchPhotoByTag(tag).tagAmico(amici.searchAmico(newName));
 	}
 
 	public static void main(String[] args) {
-
 		do {
 
 			System.out.println("Bentornato " + profilo.getNome() + " " + profilo.getCognome()

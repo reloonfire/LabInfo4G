@@ -24,5 +24,10 @@ public class Utente {
 		return eta;
 	}
 
+	@Override
+	public String toString() {
+		return "Utente [nome=" + nome + ", cognome=" + cognome + ", eta=" + eta + "]";
+	}
+
 	
 }

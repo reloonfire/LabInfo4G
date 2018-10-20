@@ -11,11 +11,7 @@ public class Foto {
 	}
 	
 	public void tagAmico(Utente tag) {
-		if(this.tag == null) {
-			this.tag = tag;
-		}else {
-			System.out.println("Hai già taggato un amico in questa foto.");
-		}
+		this.tag = tag;
 	}
 
 	public String getTitolo() {
@@ -29,7 +25,11 @@ public class Foto {
 	public Utente getTag() {
 		return tag;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Foto [titolo=" + titolo + ", tag=" + tag + "]";
+	}
 	
 	
 }
