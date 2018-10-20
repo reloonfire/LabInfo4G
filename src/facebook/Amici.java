@@ -7,11 +7,18 @@ public class Amici {
 
 	
 	
-	public Amici(Utente[] listaAmici) {
-		this.listaAmici = listaAmici;
+	public Amici() {
 		this.indice = 0;
 	}
-
+	
+	public Utente searchAmico(String nome_cognome) {
+		for (Utente utente : listaAmici) {
+			if ((utente.getNome()+ " " + utente.getCognome()).equals(nome_cognome)) {
+				return utente;
+			}
+		}
+		return null;
+	}
 
 	public void addAmico(Utente utente) {
 		if (indice++ < listaAmici.length) {
@@ -21,6 +28,6 @@ public class Amici {
 			System.out.println("Hai raggiunto il limite di amici.");
 		}
 	}
-	
+
 	
 }

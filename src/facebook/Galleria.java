@@ -13,4 +13,13 @@ public class Galleria {
 			System.out.println("Hai raggiunto il limite di foto.");
 		}
 	}
+	
+	public Foto searchPhotoByTag(String tag) {
+		for (int i = 0; i < indice; i++) {
+			if (galleria[i].getTag().equals(tag)) {
+				return galleria[i];
+			}
+		}
+		return null;
+	}
 }
